@@ -22,7 +22,7 @@ def print_data(data):
 
 d = gen_data(2,6,7,3)
 
-print("data:\n", d)
+print("data:\n")
 print_data(d)
 
 rp = RegionMaxPool(2,2,3,3)
