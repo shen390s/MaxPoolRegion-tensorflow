@@ -1,4 +1,4 @@
-Utitily function of Max pooling image in tensorflow
+Utitily function of Max pooling region of image in tensorflow
 ======================================================================
 
 1. The Image should be the shape of (batch, height, width, channels)
