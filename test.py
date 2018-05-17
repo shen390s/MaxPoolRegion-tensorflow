@@ -25,11 +25,11 @@ d = gen_data(2,6,7,3)
 print("data:\n")
 print_data(d)
 
-rp = RegionMaxPool(2,2,3,3)
+rp = RegionMaxPool()
 
 print("rp = ", rp)
 
-rx = rp(tf.constant(d))
+rx = rp(tf.constant(d),2,2,3,3)
 
 print("rx = ", rx)
 
