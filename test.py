@@ -33,7 +33,11 @@ rx = rp(tf.constant(d),2,2,3,3)
 
 print("rx = ", rx)
 
-v2 = max_pool_regions(tf.constant(d), [(1,2,2,3), (2,2,3,3)])
+#regions=[[(1,2,2,3), (2,2,3,3)],
+#         [(1,1,2,2), (2,1,3,3)]]
+regions = [[(1,2,2,3), (2,2,3,3)]]
+v2 = max_pool_regions(tf.constant(d),
+                      regions)
 print("v2=", v2)
 
 sess = tf.Session()
@@ -42,4 +46,5 @@ v = sess.run(rx)
 
 print("v=", v)
 
-print("v2=", sess.run(v2))
+val2 = sess.run(v2)
+print("v2=", val2, "\nshape=", val2.shape)
