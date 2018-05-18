@@ -20,4 +20,4 @@ class RegionMaxPool(RegionPool):
         def reduce_max(t):
             return tf.reduce_max(t, axis=1)
 
-        super(RegionMaxPool,self).__init__(reduce_max, reduce_max)
+        super(self.__class__,self).__init__(reduce_max, reduce_max)
